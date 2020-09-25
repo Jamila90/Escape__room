@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="preload" href="./fonts/ralewaymedium.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+<header class="main-header main-header--quest-order main-header--nojs">
+  <div class="main-header__wrap main-header__wrap--nojs">
+    <a href="main.html" class="main-header__logo main-header__logo--nojs" aria-label="Ссылка логотипа страницы">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+        <img src="img/logo-desktop.png" width="134" height="52" alt="Логотип сайта Escape Room" class="main-header__logo-img">
+      </picture>
+    </a>
+    <nav class="nav nav--nojs">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Квесты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Новичкам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Отзывы</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Акции</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="main-header__link-wrap main-header__link-wrap--nojs">
+      <a href="#" class="main-header__link" aria-label="Ссылка города">Новосибирск</a>
+      <a href="tel:83832840160" class="main-header__phone-link" aria-label="Ссылка телефона">8 (383) 284 01 60</a>
+    </div>
+  </div>
+  <span class="main-header__menu-text">Меню</span>
+  <button class="main-header__toggle main-header__toggle--nojs" type="button" aria-label="Мобильное меню"></button>
+</header>
+
+<main class="main-content">
+  <section class="quest-order quest-order--fatal-experiment">
+    <div class="quest-order__text-wrap quest-order__text-wrap--fatal-experiment">
+      <a href="quest.html" class="quest-order__link" aria-label="Страница всех квестов">Все квесты</a>
+      <span class="quest-order__genre quest-order__genre--fatal-experiment">приключение, детектив</span>
+      <h1>Фатальный эксперимент</h1>
+      <div class="quest-order__terms quest-order__terms--fatal-experiment">
+        <span class="quest-order__time">90 мин</span>
+        <span class="quest-order__person">5 – 8 чел</span>
+        <span class="quest-order__level">высокая сложность</span>
+      </div>
+      <p>Вы стоите на пороге нового научного открытия, которое перевернет судьбу человечества. Но что-то идёт не так, и
+        ядерный реактор, который работает на полную мощность, сигнализирует о скорой поломке. Удастся ли вам починить
+        его
+        в отведенное время и предотвратить гибель людей в этом фатальном эксперимете?</p>
+      <a href="specific-quest.html" class="quest-order__button button" aria-label="Бронирование квеста">Забронировать</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-page footer-page--nojs">
+  <div class="footer-page__social social">
+    <a href="#" class="social__item social__item--ig" aria-label="Ссылка соц сети Инстаграм">
+    </a>
+    <a href="#" class="social__item social__item--vk" aria-label="Ссылка соц сети Вконтакте">
+    </a>
+  </div>
+  <button class="footer-page__button button" type="button" aria-label="ٌКнопка для задания вопроса">Задать вопрос</button>
+</footer>
+
+<div class="modal">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
+    <h2>Ваш город:</h2>
+    <button class="modal__toggle" type="button" aria-label="Модальное окно"></button>
+    <a href="#" class="modal__link" aria-label="Поиск местоположения">Определить местоположение</a>
+    <span>... или выберите вручную</span>
+    <ul class="modal__list">
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Новосибирск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Иркутск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Смоленск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Волгоград</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Комсомольск-на-Амуре</a></li>
+    </ul>
+  </form>
+</div>
+
+<div class="modal-form">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal-form__question">
+    <h2>Задайте вопрос</h2>
+    <ul class="modal-form__list">
+      <li class="modal-form__item">
+        <label for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+        <input type="text" name="name" id="name" required="">
+        <span>Имя</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+        <input type="email" name="email" id="email" required="">
+        <span>E-mail</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="question">Ваш вопрос:</label>
+        <textarea name="question" id="question"></textarea>
+      </li>
+    </ul>
+    <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки вопроса">Отправить вопрос</button>
+    <div class="modal-form__checkbox">
+      <input class="modal-form__input" type="checkbox" name="check" id="check" required="">
+      <label class="modal-form__label" for="check"></label>
+      <p>Я согласен с <a href="#" aria-label="Ссылка на правила обработки персональных данных">правилами обработки персональных данных</a> и пользовательским соглашением</p>
+    </div>
+    <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
+  </form>
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

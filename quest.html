@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="preload" href="./fonts/ralewaymedium.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+<header class="main-header main-header--quest main-header--nojs">
+  <div class="main-header__wrap main-header__wrap--nojs">
+    <a href="main.html" class="main-header__logo main-header__logo--nojs" aria-label="Ссылка логотипа страницы">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+        <img src="img/logo-desktop.png" width="134" height="52" alt="Логотип сайта Escape Room" class="main-header__logo-img">
+      </picture>
+    </a>
+    <nav class="nav nav--nojs">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Квесты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Новичкам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Отзывы</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Акции</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="main-header__link-wrap main-header__link-wrap--nojs">
+      <a href="#" class="main-header__link" aria-label="Ссылка города">Новосибирск</a>
+      <a href="tel:83832840160" class="main-header__phone-link" aria-label="Ссылка телефона">8 (383) 284 01 60</a>
+    </div>
+  </div>
+  <span class="main-header__menu-text">Меню</span>
+  <button class="main-header__toggle main-header__toggle--nojs" type="button" aria-label="Мобильное меню"></button>
+</header>
+
+<main class="main-content main-content--quest">
+  <section class="catalog">
+    <div class="catalog__wrap">
+      <span class="catalog__text">квесты в Новосибирске</span>
+      <h1>Выберите тематику</h1>
+      <div class="catalog__filter-wrap">
+        <ul class="catalog__filter-list">
+          <li class="catalog__item catalog__item--allquest"><a href="#" class="catalog__link catalog__link--allquest" aria-label="Все квесты">Все квесты</a></li>
+          <li class="catalog__item catalog__item--adventures"><a href="#" class="catalog__link" aria-label="Жанр квеста">Приключения</a></li>
+          <li class="catalog__item catalog__item--horror"><a href="#" class="catalog__link" aria-label="Жанр квеста">Ужасы</a>
+          </li>
+          <li class="catalog__item catalog__item--mystic"><a href="#" class="catalog__link" aria-label="Жанр квеста">Мистика</a>
+          </li>
+          <li class="catalog__item catalog__item--detective"><a href="#" class="catalog__link" aria-label="Жанр квеста">Детектив</a>
+          </li>
+          <li class="catalog__item catalog__item--scifi"><a href="#" class="catalog__link" aria-label="Жанр квеста">Sci-fi</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="products">
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/sklep@1x.webp 1x, img/sklep@2x.webp 2x">
+              <img src="img/sklep@1x.jpg" srcset="img/sklep@1x.jpg 1x, img/sklep@2x.jpg 2x" width="344" height="232" alt="Склеп">
+            </picture>
+          </a>
+          <span class="products__hit">Хит</span>
+          <div class="products__item-wrap">
+            <h2><a href="#">Склеп</a></h2>
+            <p>пр. Ленина, 37</p>
+            <div class="products__lvl">
+              <span class="products__person">2-5 чел</span>
+              <span class="products__level">сложный</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="quest-order-maniac.html" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/maniak@1x.webp 1x, img/maniak@2x.webp 2x">
+              <img src="img/maniak@1x.jpg" srcset="img/maniak@1x.jpg 1x, img/maniak@2x.jpg 2x" width="344" height="232" alt="Маньяк">
+            </picture>
+          </a>
+          <span class="products__hit">Хит</span>
+          <div class="products__item-wrap">
+            <h2><a href="quest-order-maniac.html">Маньяк</a></h2>
+            <p>Верхнетецкая, 32</p>
+            <div class="products__lvl">
+              <span class="products__person">3–6 чел</span>
+              <span class="products__level">средний</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="quest-order-ritual.html" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/ritual@1x.webp 1x, img/ritual@2x.webp 2x">
+              <img src="img/ritual@1x.jpg" srcset="img/ritual@1x.jpg 1x, img/ritual@2x.jpg 2x" width="344" height="232" alt="Дорожный велосипед">
+            </picture>
+          </a>
+          <span class="products__hit">Хит</span>
+          <div class="products__item-wrap">
+            <h2><a href="quest-order-ritual.html">Ритуал</a></h2>
+            <p>пр. Ленина, 37</p>
+            <div class="products__lvl">
+              <span class="products__person">3–5 чел</span>
+              <span class="products__level">легкий</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/istoria-prizrakov@1x.webp 1x, img/istoria-prizrakov@2x.webp 2x">
+              <img src="img/istoria-prizrakov@1x.jpg" srcset="img/istoria-prizrakov@1x.jpg 1x, img/istoria-prizrakov@2x.jpg 2x" width="344" height="232" alt="История призраков">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="#">История призраков</a></h2>
+            <p>Новослободская, 2а</p>
+            <div class="products__lvl">
+              <span class="products__person">5–6 чел</span>
+              <span class="products__level">легкий</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="quest-order-secrets-of-an-old-mansion.html" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/taina-starogo-osobnyaka@1x.webp 1x, img/taina-starogo-osobnyaka@2x.webp 2x">
+              <img src="img/taina-starogo-osobnyaka@1x.jpg" srcset="img/taina-starogo-osobnyaka@1x.jpg 1x, img/taina-starogo-osobnyaka@2x.jpg 2x" width="344" height="232" alt="Тайны старого особняка">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="quest-order-secrets-of-an-old-mansion.html">Тайны старого особняка</a></h2>
+            <p>пр. Ленина, 37</p>
+            <div class="products__lvl">
+              <span class="products__person">2–5 чел</span>
+              <span class="products__level">легкий</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/hijina-v-lesu@1x.webp 1x, img/hijina-v-lesu@2x.webp 2x">
+              <img src="img/hijina-v-lesu@1x.jpg" srcset="img/hijina-v-lesu@1x.jpg 1x, img/hijina-v-lesu@2x.jpg 2x" width="344" height="232" alt="Хижина в лесу">
+            </picture>
+          </a>
+          <span class="products__hit">Хит</span>
+          <div class="products__item-wrap">
+            <h2><a href="#">Хижина в лесу</a></h2>
+            <p>Верхнетецкая, 32</p>
+            <div class="products__lvl">
+              <span class="products__person">4–7 чел</span>
+              <span class="products__level">средний</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="quest-order-fatal-experiment.html" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/fatalniy-eksperement@1x.webp 1x, img/fatalniy-eksperement@2x.webp 2x">
+              <img src="img/fatalniy-eksperement@1x.jpg" srcset="img/fatalniy-eksperement@1x.jpg 1x, img/fatalniy-eksperement@2x.jpg 2x" width="344" height="232" alt="Фатальный эксперимент">
+            </picture>
+          </a>
+          <span class="products__hit">Хит</span>
+          <div class="products__item-wrap">
+            <h2><a href="quest-order-fatal-experiment.html">Фатальный эксперимент</a></h2>
+            <p>Верхнетецкая, 32</p>
+            <div class="products__lvl">
+              <span class="products__person">5–8 чел</span>
+              <span class="products__level">сложный</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/metro-2033@1x.webp 1x, img/metro-2033@2x.webp 2x">
+              <img src="img/metro-2033@1x.jpg" srcset="img/metro-2033@1x.jpg 1x, img/metro-2033@2x.jpg 2x" width="344" height="232" alt="Метро 2033">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="#">Метро 2033</a></h2>
+            <p>Новослободская, 2а</p>
+            <div class="products__lvl">
+              <span class="products__person">6–8 чел</span>
+              <span class="products__level">средний</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/stariy-cerdak@1x.webp 1x, img/stariy-cerdak@2x.webp 2x">
+              <img src="img/stariy-cerdak@1x.jpg" srcset="img/stariy-cerdak@1x.jpg 1x, img/stariy-cerdak@2x.jpg 2x" width="344" height="232" alt="Старый чердак">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="#">Старый чердак</a></h2>
+            <p>Новослободская, 2а</p>
+            <div class="products__lvl">
+              <span class="products__person">2–3 чел</span>
+              <span class="products__level">легкий</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/posledniy-rubej@1x.webp 1x, img/posledniy-rubej@2x.webp 2x">
+              <img src="img/posledniy-rubej@1x.jpg" srcset="img/posledniy-rubej@1x.jpg 1x, img/posledniy-rubej@2x.jpg 2x" width="344" height="232" alt="Последний рубеж">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="#">Последний рубеж</a></h2>
+            <p>Верхнетецкая, 32</p>
+            <div class="products__lvl">
+              <span class="products__person">4–7 чел</span>
+              <span class="products__level">средний</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item">
+          <a href="#" class="products__photo">
+            <picture>
+              <source type="image/webp" srcset="img/mars-2056@1x.webp 1x, img/mars-2056@2x.webp 2x">
+              <img src="img/mars-2056@1x.jpg" srcset="img/mars-2056@1x.jpg 1x, img/mars-2056@2x.jpg 2x" width="344" height="232" alt="Марс-2056">
+            </picture>
+          </a>
+          <div class="products__item-wrap">
+            <h2><a href="#">Марс-2056</a></h2>
+            <p>пр. Ленина, 37</p>
+            <div class="products__lvl">
+              <span class="products__person">2–4 чел</span>
+              <span class="products__level">легкий</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-page footer-page--quest footer-page--nojs">
+  <div class="footer-page__social social">
+    <a href="#" class="social__item social__item--ig" aria-label="Ссылка соц сети Инстаграм">
+    </a>
+    <a href="#" class="social__item social__item--vk" aria-label="Ссылка соц сети Вконтакте">
+    </a>
+  </div>
+  <button class="footer-page__button button" type="button" aria-label="ٌКнопка для задания вопроса">Задать вопрос</button>
+</footer>
+
+<div class="modal">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
+    <h2>Ваш город:</h2>
+    <button class="modal__toggle" type="button" aria-label="Модальное окно"></button>
+    <a href="#" class="modal__link" aria-label="Поиск местоположения">Определить местоположение</a>
+    <span>... или выберите вручную</span>
+    <ul class="modal__list">
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Новосибирск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Иркутск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Смоленск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Волгоград</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Комсомольск-на-Амуре</a></li>
+    </ul>
+  </form>
+</div>
+
+<div class="modal-form">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal-form__question">
+    <h2>Задайте вопрос</h2>
+    <ul class="modal-form__list">
+      <li class="modal-form__item">
+        <label for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+        <input type="text" name="name" id="name" required="">
+        <span>Имя</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+        <input type="email" name="email" id="email" required="">
+        <span>E-mail</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="question">Ваш вопрос:</label>
+        <textarea name="question" id="question"></textarea>
+      </li>
+    </ul>
+    <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки вопроса">Отправить вопрос</button>
+    <div class="modal-form__checkbox">
+      <input class="modal-form__input" type="checkbox" name="check" id="check" required="">
+      <label class="modal-form__label" for="check"></label>
+      <p>Я согласен с <a href="#" aria-label="Ссылка на правила обработки персональных данных">правилами обработки персональных данных</a> и пользовательским соглашением</p>
+    </div>
+    <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
+  </form>
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

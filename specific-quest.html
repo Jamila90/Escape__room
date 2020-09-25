@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room</title>
+  <link rel="preload" href="./fonts/ralewaymedium.woff2" type="font/woff2" as="font" crossorigin="">
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+
+<header class="main-header main-header--specific-quest main-header--nojs">
+  <div class="main-header__wrap main-header__wrap--nojs">
+    <a href="main.html" class="main-header__logo main-header__logo--nojs" aria-label="Ссылка логотипа страницы">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+        <img src="img/logo-desktop.png" width="134" height="52" alt="Логотип сайта Escape Room" class="main-header__logo-img">
+      </picture>
+    </a>
+    <nav class="nav nav--nojs">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Квесты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Новичкам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Отзывы</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Акции</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" aria-label="Ссылка на другую страницу сайта">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="main-header__link-wrap main-header__link-wrap--nojs">
+      <a href="#" class="main-header__link" aria-label="Ссылка города">Новосибирск</a>
+      <a href="tel:83832840160" class="main-header__phone-link" aria-label="Ссылка телефона">8 (383) 284 01 60</a>
+    </div>
+  </div>
+  <span class="main-header__menu-text">Меню</span>
+  <button class="main-header__toggle main-header__toggle--nojs" type="button" aria-label="Мобильное меню"></button>
+</header>
+
+<main class="main-content">
+  <section class="specific-quest">
+    <div class="specific-quest__content-wrap">
+      <div class="specific-quest__content">
+        <a href="quest.html" class="specific-quest__link-back" aria-label="Страница конкретного квеста">Описание</a>
+        <span class="specific-quest__chosen">выбранный квест</span>
+        <div class="specific-quest__text-wrap">
+          <h1>Маньяк</h1>
+          <p>Вы выбрали игру<br class="specific-quest__br"> 22 марта в 16:00.<br class="specific-quest__br"> К оплате 1500 рублей.</p>
+          <a href="#" class="specific-quest__link" aria-label="Оплата игры">Перейти к оплате</a>
+        </div>
+        <span class="specific-quest__time">Выберите дату</span>
+        <span class="specific-quest__date">22 марта</span>
+        <ul class="specific-quest__busy-list">
+          <li class="specific-quest__busy-item specific-quest__busy-item--free"> — сводобно</li>
+          <li class="specific-quest__busy-item specific-quest__busy-item--busy"> — занято</li>
+          <li class="specific-quest__busy-item specific-quest__busy-item--chosen"> — выбрано вами</li>
+        </ul>
+      </div>
+      <ul class="specific-quest__timetable-list">
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-1">
+          <label class="specific-quest__label" for="time-1">1400 ₽</label>
+          <span>9:45</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-2">
+          <label class="specific-quest__label" for="time-2">1400 ₽</label>
+          <span>11:00</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-3" disabled="">
+          <label class="specific-quest__label" for="time-3">1400 ₽</label>
+          <span>12:15</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-4" disabled="">
+          <label class="specific-quest__label" for="time-4">1400 ₽</label>
+          <span>13:30</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-5">
+          <label class="specific-quest__label" for="time-5">1400 ₽</label>
+          <span>14:45</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-6" checked="">
+          <label class="specific-quest__label" for="time-6">1500 ₽</label>
+          <span>16:00</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-7" disabled="">
+          <label class="specific-quest__label" for="time-7">1500 ₽</label>
+          <span>17:15</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-8">
+          <label class="specific-quest__label" for="time-8">1500 ₽</label>
+          <span>18:30</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-9">
+          <label class="specific-quest__label" for="time-9">1500 ₽</label>
+          <span>19:45</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-10">
+          <label class="specific-quest__label" for="time-10">1800 ₽</label>
+          <span>21:00</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-11" disabled="">
+          <label class="specific-quest__label" for="time-11">1800 ₽</label>
+          <span>22:15</span>
+        </li>
+
+        <li class="specific-quest__item">
+          <input class="specific-quest__input visually-hidden" type="radio" name="time" id="time-12" disabled="">
+          <label class="specific-quest__label" for="time-12">2000 ₽</label>
+          <span>23:30</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer-page footer-page--nojs">
+  <div class="footer-page__social social">
+    <a href="#" class="social__item social__item--ig" aria-label="Ссылка соц сети Инстаграм">
+    </a>
+    <a href="#" class="social__item social__item--vk" aria-label="Ссылка соц сети Вконтакте">
+    </a>
+  </div>
+  <button class="footer-page__button button" type="button" aria-label="ٌКнопка для задания вопроса">Задать вопрос</button>
+</footer>
+
+<div class="modal">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal__form">
+    <h2>Ваш город:</h2>
+    <button class="modal__toggle" type="button" aria-label="Модальное окно"></button>
+    <a href="#" class="modal__link" aria-label="Поиск местоположения">Определить местоположение</a>
+    <span>... или выберите вручную</span>
+    <ul class="modal__list">
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Новосибирск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Иркутск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Смоленск</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Волгоград</a></li>
+      <li class="modal__item"><a href="#" class="modal__city-link" aria-label="Выбор города">Комсомольск-на-Амуре</a></li>
+    </ul>
+  </form>
+</div>
+
+<div class="modal-form">
+  <form action="https://echo.htmlacademy.ru" method="post" class="modal-form__question">
+    <h2>Задайте вопрос</h2>
+    <ul class="modal-form__list">
+      <li class="modal-form__item">
+        <label for="name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
+        <input type="text" name="name" id="name" required="">
+        <span>Имя</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="email">Чтобы вы получили ответ, оставьте ваш e-mail</label>
+        <input type="email" name="email" id="email" required="">
+        <span>E-mail</span>
+      </li>
+
+      <li class="modal-form__item">
+        <label for="question">Ваш вопрос:</label>
+        <textarea name="question" id="question"></textarea>
+      </li>
+    </ul>
+    <button class="modal-form__button button" type="submit" aria-label="Кнопка для отправки вопроса">Отправить вопрос</button>
+    <div class="modal-form__checkbox">
+      <input class="modal-form__input" type="checkbox" name="check" id="check" required="">
+      <label class="modal-form__label" for="check"></label>
+      <p>Я согласен с <a href="#" aria-label="Ссылка на правила обработки персональных данных">правилами обработки персональных данных</a> и пользовательским соглашением</p>
+    </div>
+    <button class="modal-form__toggle" type="button" aria-label="Модальное окно"></button>
+  </form>
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
