@@ -240,7 +240,7 @@ body {
 a {
   text-decoration: none; }
   a:hover {
-    cursor: url("/img/cursor–hand.png"), pointer; }
+    cursor: url("../img/cursor–hand.png"), pointer; }
 
 img {
   height: auto;
@@ -262,7 +262,7 @@ img {
 
 .intro {
   height: 100vh;
-  background-image: url("/img/main-bg-desktop@1x.jpg");
+  background-image: url("../img/main-bg-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-color: #151110;
   background-size: cover; }
@@ -318,7 +318,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .intro {
-    background-image: url("/img/main-bg-mobile@1x.jpg"); }
+    background-image: url("../img/main-bg-mobile@1x.jpg"); }
   .intro__text-wrap {
     max-width: 310px;
     padding-top: 409px;
@@ -342,8 +342,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 7vw;
-  max-width: 630px;
+  padding-left: 9vw;
+  width: 51%;
   cursor: url("../img/cursor–hand.png"), pointer; }
 
 .nav a {
@@ -374,9 +374,7 @@ img {
     color: #f2890f; }
 
 .nav__item {
-  margin-right: 52px; }
-  .nav__item:nth-child(5n) {
-    margin-right: 0; }
+  margin-right: 10px; }
 
 @media only screen and (max-width: 1023px) {
   .nav {
@@ -795,7 +793,7 @@ img {
   border-radius: 0;
   overflow: hidden;
   color: #e5e5e5;
-  cursor: url("/img/cursor–hand.png"), pointer; }
+  cursor: url("../img/cursor–hand.png"), pointer; }
   .footer-page__button::before {
     content: "";
     position: absolute;
@@ -2271,7 +2269,7 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     text-align: end;
-    background-image: url("/img/icon-arrow-left.svg");
+    background-image: url("../img/icon-arrow-left.svg");
     background-position: 0 6px;
     background-repeat: no-repeat;
     background-size: 6px 10px;
