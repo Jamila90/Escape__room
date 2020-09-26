@@ -374,7 +374,8 @@ img {
     color: #f2890f; }
 
 .nav__item {
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: auto; }
 
 @media only screen and (max-width: 1023px) {
   .nav {
