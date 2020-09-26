@@ -984,6 +984,7 @@ img {
     right: 0;
     top: 95px;
     height: 98px;
+    max-width: inherit;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
