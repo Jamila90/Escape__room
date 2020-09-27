@@ -1906,6 +1906,9 @@ img {
   background-size: cover;
   background-position: center; }
 
+.quest-order--maniac {
+  height: 100vh; }
+
 .quest-order--ritual {
   height: 100vh;
   background-image: url("../img/bg-ritual@1x.jpg"); }
