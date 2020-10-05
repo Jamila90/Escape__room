@@ -1354,7 +1354,7 @@ img {
   top: -8px;
   width: 8px;
   height: 8px;
-  background-image: url("/img/icon-check.svg");
+  background-image: url("../img/icon-check.svg");
   background-repeat: no-repeat;
   background-size: 8px 8px;
   background-color: #f2890f; }
