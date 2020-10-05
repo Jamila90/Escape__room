@@ -14,8 +14,13 @@ let questionClose = document.querySelector('.modal-form__toggle');
 let questionBtn = document.querySelector('.footer-page__button');
 let modalFormQuestion = document.querySelector('.modal-form__question');
 let element = document.querySelector('.quest-order__text-wrap');
-let name = document.querySelectorAll('.modal-form__item input[name]');
+let name = document.querySelector('.modal-form__item input[name]');
+let email = document.querySelector('.modal-form__item input[email]');
+let nameId = document.getElementById('name');
+let emailId = document.getElementById('email');
 let scrollPos = 0;
+let isStorageSupport = true;
+let storage = '';
 
 mainHeader.classList.remove('main-header--nojs');
 mainNav.classList.remove('nav--nojs');
@@ -41,8 +46,32 @@ modalToggle.addEventListener('click', function () {
   modalCity.classList.remove('modal--show');
 });
 
-questionBtn.addEventListener('click', function () {
+try {
+  storage = localStorage.getItem('name');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+questionBtn.addEventListener('click', function (e) {
+  e.preventDefault();
   questionModal.classList.add('modal-form--show');
+  if (storage) {
+    nameId.value = storage;
+    emailId.focus();
+  } else {
+    nameId.focus();
+  }
+});
+
+questionModal.addEventListener('submit', function (e) {
+  e.preventDefault();
+  if (isStorageSupport) {
+    localStorage.setItem('name', name.value);
+    name.value = localStorage.getItem('name');
+  } else if (isStorageSupport) {
+    localStorage.setItem('email', email.value);
+    email.value = localStorage.getItem('email');
+  }
 });
 
 questionClose.addEventListener('click', function () {
@@ -80,16 +109,6 @@ document.addEventListener('keyup', function (e) {
   }
 });
 
-function form (name) {
-  for (let i = 0; i < name; i++) {
-    localStorage.setItem('name', 'name');
-    localStorage.setItem('name', 'email');
-  }
-}
-
-form();
-localStorage.getItem('name');
-
 function checkPosition(e) {
   let windowY = window.scrollY;
   if (windowY < scrollPos) {
@@ -105,7 +124,6 @@ function checkPosition(e) {
 }
 
 window.addEventListener('scroll', checkPosition);
-document.querySelector('.modal-form__item input').focus();
 
 $(document).ready(function () {
   $('.modal-form__item input').on('input', function (e) {
