@@ -58,17 +58,18 @@ questionBtn.addEventListener('click', function (e) {
   if (storage) {
     nameId.value = storage;
     emailId.focus();
+  } if (storage !== '') {
+    nameId.focus();
   } else {
     nameId.focus();
   }
 });
 
-questionModal.addEventListener('submit', function (e) {
+modalFormQuestion.addEventListener('submit', function (e) {
   e.preventDefault();
   if (isStorageSupport) {
     localStorage.setItem('name', name.value);
     name.value = localStorage.getItem('name');
-  } else if (isStorageSupport) {
     localStorage.setItem('email', email.value);
     email.value = localStorage.getItem('email');
   }

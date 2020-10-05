@@ -1775,7 +1775,8 @@ img {
   top: 6px;
   left: 37px;
   color: white;
-  cursor: url("../img/cursor–hand.png"), pointer; }
+  cursor: url("../img/cursor–hand.png"), pointer;
+  pointer-events: none; }
 
 .specific-quest__link-back {
   display: none; }
