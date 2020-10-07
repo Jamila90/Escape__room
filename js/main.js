@@ -11,7 +11,7 @@
   let questionModal = document.querySelector('.modal-form');
   let modalToggle = document.querySelector('.modal__toggle');
   let questionClose = document.querySelector('.modal-form__toggle');
-  let questionBtn = document.querySelector('.footer-page button');
+  let questionBtn = document.querySelector('.footer-page__button');
   let modalFormQuestion = document.querySelector('.modal-form__question');
   let element = document.querySelector('.quest-order__text-wrap');
   let name = document.querySelector('.modal-form__item input[name]');
